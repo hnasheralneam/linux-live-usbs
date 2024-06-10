@@ -22,3 +22,29 @@ p {
 img {
    max-width: 900px;
 }
+
+@media (max-width: 900px) {
+   img {
+      width: 100vw;
+   }
+}
+
+@media (min-width: 1200px) {
+   img {
+      max-width: 49vw;
+   }
+}
+
+.fullpage {
+   display: none;
+   position: fixed;
+   z-index: 9999;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background-size: contain;
+   background-repeat: no-repeat no-repeat;
+   background-position: center center;
+   background-color: black;
+}
