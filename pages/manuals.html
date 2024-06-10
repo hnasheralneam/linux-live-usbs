@@ -1,64 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../styles/tailwind.css">
    <link rel="stylesheet" href="../styles/styles.css">
    <title>Manuals | Linux live USBs</title>
 </head>
+
 <body>
-   <div class="navigation">
-      <a href="../index.html">home</a>
-      <a href="./manuals.html">manuals</a>
-      <a href="./about-linux.html">about linux & live booting</a>
-      <a href="./screenshots.html">screenshots</a>
+   <div class="navigation text-center">
+      <a class="hover:underline" href="../index.html">home</a>
+      <a class="hover:underline" href="./manuals.html">manuals</a>
+      <a class="hover:underline" href="./about-linux.html">about linux & live booting</a>
+      <a class="hover:underline" href="./screenshots.html">screenshots</a>
    </div>
-   <h1>Here are the manuals</h1>
-   <h2>User guide</h2>
-   <h3>For using a usb you bought</h3>
-   <p>digital guide: in progress</p>
-   <div>
-      <h1>User Manual</h1>
-      <ol>
-         <li>1) Make sure your computer is off</li>
-         <li>2) Insert USB flash drive into the computer</li>
-         <li>3) Press the power button to turn on the computer, and rapidly press the <code>F9</code> key until the computer manufacturer logo shows up on the screen*</li>
-         <li>4) You should now be in the boot menu. Use the arrow keys to move to the list item that says "USB", "flash drive", or the name of the USB manufacturer (eg. PNY, SanDisk).</li>
-         <li>5) Some distrubutions (types of linux) come with a screen that will let you choose how to boot, if yours does choose "test/try [distro name]" and press enter.</li>
-         <li>6) Wait until it boots up,, then enjoy your new temporary linux environment!</li>
-      </ol>
-      <p>Read more <a href="about-linux.html">about Linux and live USBs</a></p>
-      <br>
-      <p>* HP uses the <code>F9</code> key for the boot mentu, if you are using another device look [computer manufacturer name] bios/boot menu key</p>
-      <p>Note: some distro need secure boot to be disabled for booting off a USB</p>
+   <div class="w-[700px] mx-auto">
+      <h1 class="text-4xl font-semibold">Here are the manuals</h1>
+      <div>
+         <h2>User guide</h2>
+         <h3>For using a usb you bought</h3>
+         <a class="text-blue-400 underline" href="guides/run.html">find out how to run your new live USB</a>
+         <h1>User Manual</h1>
+      </div>
+      <br><br><br>
+      <div>
+         <a class="text-blue-400 underline" href="guides/neofetch.html">find out how to show off your distro with
+            neofetch</a>
+      </div>
+      <br><br><br>
+      <div>
+         <h2>Manufacturers Guide</h2>
+         <h3>For creating your own usb</h3>
+         <p>digital guide: in progress</p>
+         <div>
+            <h1>Manufacturer's Manual</h1>
+            <h2>Windows</h2>
+            <ol>
+               <li>1) Install Rufus media writer</li>
+               <li>2) Install the ISO for the desired distro, which you can find by searching "[distro name] live
+                  ISO/image".
+               </li>
+               <li>3) Open Rufus. Insert the USB into the computer, and select it in the Rufus menu. Select the ISO you
+                  downloaded. Click "write".</li>
+               <li>4) Enjoy your new live USB!</li>
+            </ol>
+            <p>Read more <a href="about-linux.html">about Linux and live USBs</a></p>
+         </div>
+         <h2>Linux</h2>
+         <ol>
+            <li>1) Install Fedora media writer (pre-installed on Fedora), Popsicle for writing to multiple USBs
+               simulation,or an
+               equivalent media writer tool.</li>
+            <li>2) Download the live boot ISO for the desired distro.</li>
+            <li>3) Open your media writer tool, and select the USB and ISO. Click write. This will take a while.</li>
+            <li>4) Enjoy your new live USB!</li>
+         </ol>
+         <p>Read more <a href="about-linux.html">about Linux and live USBs</a></p>
+      </div>
    </div>
-   <br>
-   <img src="../images/users-guide.jpg" alt="Image with users guide">
-   <br><br>
-   <h2>Manufacturers Guide</h2>
-   <h3>For creating your own usb</h3>
-   <p>digital guide: in progress</p>
-   <div>
-      <h1>Manufacturer's Manual</h1>
-      <h2>Windows</h2>
-      <ol>
-         <li>1) Install Rufus media writer</li>
-         <li>2) Install the ISO for the desired distro, which you can find by searching "[distro name] live ISO/image".</li>
-         <li>3) Open Rufus. Insert the USB into the computer, and select it in the Rufus menu. Select the ISO you downloaded. Click "write".</li>
-         <li>4) Enjoy your new live USB!</li>
-      </ol>
-      <p>Read more <a href="about-linux.html">about Linux and live USBs</a></p>
-   </div>
-     <h2>Linux</h2>
-      <ol>
-         <li>1) Install Fedora media writer (pre-installed on Fedora), Popsicle for writing to multiple USBs simulation,or an equivalent media writer tool.</li>
-         <li>2) Download the live boot ISO for the desired distro.</li>
-         <li>3) Open your media writer tool, and select the USB and ISO. Click write. This will take a while.</li>
-         <li>4) Enjoy your new live USB!</li>
-      </ol>
-      <p>Read more <a href="about-linux.html">about Linux and live USBs</a></p>
-   </div>
-   <br>
+   <br><br><br>
    <img src="../images/manufacturers-guide.jpg" alt="Image with manufacturers guide">
+
+   </div>
 </body>
+
 </html>

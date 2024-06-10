@@ -20,6 +20,7 @@ p {
 }
 
 img {
+   display: inline-block;
    max-width: 900px;
 }
 
@@ -47,4 +48,9 @@ img {
    background-repeat: no-repeat no-repeat;
    background-position: center center;
    background-color: black;
+}
+
+.guide img {
+   width: 700px;
+   margin: .5em auto;
 }

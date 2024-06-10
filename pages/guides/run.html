@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../styles/tailwind.css">
+   <link rel="stylesheet" href="../../styles/styles.css">
+   <title>Using your live USB | Manuals | Linux live USBs</title>
+</head>
+
+<body>
+   <div class="navigation text-center">
+      <a class="hover:underline" href="../../index.html">home</a>
+      <a class="hover:underline" href="../manuals.html">manuals</a>
+      <a class="hover:underline" href="../about-linux.html">about linux & live booting</a>
+      <a class="hover:underline" href="../screenshots.html">screenshots</a>
+   </div>
+   <div class="guide w-[700px] mx-auto">
+      <h1 class="text-3xl semibold mb-6">How to use your live Linux USB</h1>
+      <p>1) Find a computer. If your computer runs Arm, you'll need to find an ISO for your computer. If you don't know if it
+         runs Arm, it probably does not. This also won't work with Apple Silicon Macs.</p>
+      <img src="../../images/guides/run/1-have-computer.jpg" alt="Have computer">
+      <p>2) Make sure the device is off by checking the LED indicator.</p>
+      <img src="../../images/guides/run/2-make-sure-off.jpg" alt="Ensure off">
+      <p>3) Insert the USB drive into the computer.</p>
+      <img src="../../images/guides/run/3-insert-usb.jpg" alt="Insert the usb">
+      <p>4) Turn on the device, and rapidly press the <code>F9</code> key* until the computer
+         manufacturer logo shows up on the screen.</p>
+      <img src="../../images/guides/run/4-turn-on.jpg" alt="Turn on computer">
+      <img src="../../images/guides/run/5-spam-f9.jpg" alt="Spam F9 key">
+      <p>5) You should now be in the boot menu. Use the arrow keys to move to the list item that says "USB", "flash drive",
+         or the name of the USB manufacturer (eg. PNY, SanDisk).</p>
+      <img src="../../images/guides/run/6-choose-boot-drive.jpg" alt="Choose boot device">
+      <p>6) Some distrubutions ("types" of linux) come with a screen that will let you choose how to boot, if yours does choose
+      "test/try [distro name]" and press enter.</p>
+      <img src="../../images/guides/run/7-grub.jpg" alt="Choose correct grub option">
+      <p>7) Wait until it boots up, then enjoy your new temporary Linux environment!</p>
+      <img src="../../images/guides/run/8-wait.jpg" alt="Wait a bit">
+      <img src="../../images/guides/run/9-done.jpg" alt="Yay!">
+      <p>Everything you do locally on the device will be lost when the computer is turned off.
+         <a class="text-blue-400 underline" href="about-linux.html">about Linux and live USBs</a>
+      </p>
+      <p>* HP uses the <code>F9</code> key for the boot mentu, if you are using another device look [computer manufacturer name] bios/boot menu key</p>
+      <p>Note: some distro need secure boot to be disabled for booting off a USB. I will mark this on the distro information page.</p>
+      <br><br>
+   </div>
+</body>
+
+</html>
