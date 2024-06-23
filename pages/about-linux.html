@@ -1,28 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="../styles/tailwind.css">
+   <meta name="viewport" content="width=device-width">
+   <meta name="description" content="Learn about Linux!">
+   <link rel="shortcut icon" type="image/x-icon" href="../images/usb.svg">
+   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="../styles/styles.css">
-   <title>About Linux and your new live environment | Linux live USBs</title>
+   <link rel="stylesheet" href="../styles/thoughts.css">
+   <title>About Linux | Linux Info</title>
 </head>
-
 <body>
-   <div class="navigation text-center">
-      <a class="hover:underline" href="../index.html">home</a>
-      <a class="hover:underline" href="./manuals.html">manuals</a>
-      <a class="hover:underline" href="./about-linux.html">about linux & live booting</a>
-      <a class="hover:underline" href="./screenshots.html">screenshots</a>
+   <div class="navigation progress-parent">
+      <div class="progress"></div>
+      <div class="nav-links">
+         <a href="../index.html">home</a>
+         <a href="../pages/manuals.html">manuals</a>
+         <a href="../pages/about-linux.html">about linux & live booting</a>
+         <a href="../pages/screenshots.html">screenshots</a>   
+      </div>
    </div>
-   <h1>What is live booting?</h1>
-   <p>"Live booting is the process of running an operating system from a removable media, such as a USB drive, without installing it on a computer's hard drive. This allows you to try out the operating system without making any changes to your computer's existing setup. Live booting is commonly used for testing out new operating systems, troubleshooting computer problems, and accessing a secure and private environment" -GitHub Copilot (the orginial developer one).</p>
-   <p>Please note that unless you are running your network traffic through something like tor, you can still be tracked by websites you visit through your IP address.</p>
-   <br>
-   <h1>What is Linux?</h1>
-   <p>Linux is an operating system like Windows or MacOS, which basically means it handles system resources to allow you to run programs.</p>
-   <p>"Linux is a free and open-source operating system that is based on the Linux kernel. It is known for its stability, security, and flexibility, and is used by millions of people around the world. Linux is available in many different distributions, or "distros," each of which is tailored to different use cases and user preferences. Some popular Linux distros include Ubuntu, Fedora, and Debian" -GitHub Copilot (the orginial developer one).</p>
-   <img src="../images/about-linux.jpg" alt="Image with info about linux">
+   
+   <br><br>
+
+   <div class="content thoughtsblock">
+      <div class="article">
+         <h1 id="live-booting" onclick="copy('live-booting')">What is live booting?</h1>
+         <h2>Jun 20 2024</h2>
+         <p>"Live booting is the process of running an operating system from a removable media, such as a USB drive, without installing it on a computer's hard drive. This allows you to try out the operating system without making any changes to your computer's existing setup. Live booting is commonly used for testing out new operating systems, troubleshooting computer problems, and accessing a secure and private environment" -GitHub Copilot (the orginial developer one).</p>
+         <p>Please note that unless you are running your network traffic through something like tor, you can still be tracked by websites you visit through your IP address.</p>         
+      </div>
+      <div class="article">
+         <h1 id="linux" onclick="copy('linux')">What is Linux?</h1>
+         <h2>Jun 20 2024</h2>
+         <p>Linux is an operating system like Windows or MacOS, which basically means it handles system resources to allow you to run programs.</p>
+         <p>"Linux is a free and open-source operating system that is based on the Linux kernel. It is known for its stability, security, and flexibility, and is used by millions of people around the world. Linux is available in many different distributions, or "distros," each of which is tailored to different use cases and user preferences. Some popular Linux distros include Ubuntu, Fedora, and Debian" -GitHub Copilot (the orginial developer one).</p>
+      </div>
+   </div>
+   <br><br>
+   <div class="footer">
+      <div>
+         <h2>Info</h2>
+         <p>Website by -> <a href="https://hnasheralneam.github.io/">Hamza Nasher-Alneam</a></p>
+         <p class="faded-footer">He's a pretty cool person imo</p>
+      </div>
+      <div>
+         <div class="funsies">
+            <p>Change the website color theme</p>
+            <button onclick="changeTheme()">Random</button>
+            <button onclick="changeThemeHex()">Hex code</button>
+         </div>
+      </div>
+   </div>
 </body>
+<script src="../scripts/main.js"></script>
+<script src="../scripts/copyHeader.js"></script>
 </html>

@@ -1,69 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="../styles/tailwind.css">
+   <meta name="viewport" content="width=device-width">
+   <meta name="description" content="Learn about Linux!">
+   <link rel="shortcut icon" type="image/x-icon" href="../images/usb.svg">
+   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="../styles/styles.css">
-   <title>Manuals | Linux live USBs</title>
+   <link rel="stylesheet" href="../styles/thoughts.css">
+   <title>Manuals | Linux Info</title>
 </head>
-
 <body>
-   <div class="navigation text-center">
-      <a class="hover:underline" href="../index.html">home</a>
-      <a class="hover:underline" href="./manuals.html">manuals</a>
-      <a class="hover:underline" href="./about-linux.html">about linux & live booting</a>
-      <a class="hover:underline" href="./screenshots.html">screenshots</a>
+   <div class="navigation progress-parent">
+      <div class="progress"></div>
+      <div class="nav-links">
+         <a href="../index.html">home</a>
+         <a href="../pages/manuals.html">manuals</a>
+         <a href="../pages/about-linux.html">about linux & live booting</a>
+         <a href="../pages/screenshots.html">screenshots</a>   
+      </div>
    </div>
-   <div class="w-[700px] mx-auto">
-      <h1 class="text-4xl font-semibold">Here are the manuals</h1>
-      <div>
-         <h2>User guide</h2>
-         <h3>For using a usb you bought</h3>
-         <a class="text-blue-400 underline" href="guides/run.html">find out how to run your new live USB</a>
-         <h1>User Manual</h1>
+   
+   <br><br>
+
+   <div class="content thoughtsblock">
+      <div class="article">
+         <h1 id="user-guide" onclick="copy('user-guide')">User Guide</h1>
+         <h2>Jun 20 2024</h2>
+         <p>Find out <a class="text-blue-400 underline" href="guides/run.html">how to use your new live USB</a>.</p>
       </div>
-      <br><br><br>
-      <div>
-         <a class="text-blue-400 underline" href="guides/neofetch.html">find out how to show off your distro with
-            neofetch</a>
-      </div>
-      <br><br><br>
-      <div>
-         <h2>Manufacturers Guide</h2>
-         <h3>For creating your own usb</h3>
-         <p>digital guide: in progress</p>
-         <div>
-            <h1>Manufacturer's Manual</h1>
-            <h2>Windows</h2>
-            <ol>
-               <li>1) Install Rufus media writer</li>
-               <li>2) Install the ISO for the desired distro, which you can find by searching "[distro name] live
-                  ISO/image".
-               </li>
-               <li>3) Open Rufus. Insert the USB into the computer, and select it in the Rufus menu. Select the ISO you
-                  downloaded. Click "write".</li>
-               <li>4) Enjoy your new live USB!</li>
-            </ol>
-            <p>Read more <a href="about-linux.html">about Linux and live USBs</a></p>
-         </div>
-         <h2>Linux</h2>
+      <div class="article">
+         <h1 id="creator-guide" onclick="copy('creator-guide')">Creator Guide</h1>
+         <h2>Jun 20 2024</h2>
+         <p>For making a live Linux USB</p>
+
+         <br>
+         <h2>Windows</h2>
          <ol>
-            <li>1) Install Fedora media writer (pre-installed on Fedora), Popsicle for writing to multiple USBs
-               simulation,or an
-               equivalent media writer tool.</li>
-            <li>2) Download the live boot ISO for the desired distro.</li>
-            <li>3) Open your media writer tool, and select the USB and ISO. Click write. This will take a while.</li>
-            <li>4) Enjoy your new live USB!</li>
+            <li>Install Rufus media writer</li>
+            <li>Install the ISO for the desired distro, which you can find by searching "[distro name] live
+               ISO/image".
+            </li>
+            <li>Open Rufus. Insert the USB into the computer, and select it in the Rufus menu. Select the ISO you
+               downloaded. Click "write".</li>
+            <li>Enjoy your new live USB!</li>
          </ol>
          <p>Read more <a href="about-linux.html">about Linux and live USBs</a></p>
+         <br><br>
+      <h2>Linux</h2>
+      <ol>
+         <li>Install Fedora media writer (pre-installed on Fedora), Popsicle for writing to multiple USBs
+            simulation,or an
+            equivalent media writer tool.</li>
+         <li>Download the live boot ISO for the desired distro.</li>
+         <li>Open your media writer tool, and select the USB and ISO. Click write. This will take a while.</li>
+         <li>Enjoy your new live USB!</li>
+      </ol>
+      <p>Read more <a href="about-linux.html">about Linux and live USBs</a></p>
+
+      </div>
+      <div class="article">
+         <h1 id="user-guide" onclick="copy('user-guide')">Installing and using Neofetch</h1>
+         <h2>Jun 20 2024</h2>
+         <p>Not really recommened anymore, because it's end-of-life, but here you go: <a href="guides/neofetch.html">find out how to show off your distro with
+            Neofetch</a>.</p>
       </div>
    </div>
-   <br><br><br>
-   <img src="../images/manufacturers-guide.jpg" alt="Image with manufacturers guide">
-
+   <br><br>
+   <div class="footer">
+      <div>
+         <h2>Info</h2>
+         <p>Website by -> <a href="https://hnasheralneam.github.io/">Hamza Nasher-Alneam</a></p>
+         <p class="faded-footer">He's a pretty cool person imo</p>
+      </div>
+      <div>
+         <div class="funsies">
+            <p>Change the website color theme</p>
+            <button onclick="changeTheme()">Random</button>
+            <button onclick="changeThemeHex()">Hex code</button>
+         </div>
+      </div>
    </div>
 </body>
-
+<script src="../scripts/main.js"></script>
+<script src="../scripts/copyHeader.js"></script>
 </html>
